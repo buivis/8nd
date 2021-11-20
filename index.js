@@ -1,16 +1,13 @@
 //1 Užduotis
-num1=5;
-num2=5;
-function multiply() {
-    result=num1*num2;
-    if(isNaN(result)){
+function multiply(num1, num2) {
+    if(typeof num1 != 'number' || typeof num2 != 'number'){
         console.log("Įveskite skaičių.")
     }
     else{
-        console.log("Yra skaičius")
+        console.log(num1 * num2)
     }
 }
-multiply()
+multiply(4,8)
 //2 Užduotis
 const selectedNumber = 10;
 switch (selectedNumber) {
